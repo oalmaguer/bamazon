@@ -54,7 +54,7 @@
                             the card's content.</p>
                             <div class="form-group">
                                     <label for="exampleFormControlSelect1">Example select</label>
-                                    <select class="form-control" id="1">
+                                    <select class="form-control" id="1 stockQuantity">
                                       <option value="1">1</option>
                                       <option value="2">2</option>
                                       <option value="3">3</option>
@@ -174,23 +174,25 @@
 
                   $(`.card${i}-text`).append(`<p>Stock: ${data[i].stockQuantity}</p>`);
                 
-        
-                  $(".btnSoccer").on("click", function(){
-                    var newStock = data[0].stockQuantity - $("#0 option:selected").text();
+                  console.log(newStock);
+                  $(`.card0-text`).text(`The price is: $${data[0].price}`);
+                  $(".card0-text").append(`<p>Stock: ${newStock}</p>`)
+                  
+                })
 
-                    console.log(newStock);
-                    $(`.card0-text`).text(`The price is: $${data[0].price}`);
-                    $(".card0-text").append(`<p>Stock: ${newStock}</p>`)
-                    
+                $(".btnSoccer").on("click", function(){
+                //   var newStock = data[0].stockQuantity - $("#0 option:selected").text();
+                const amountToPurchase = $("#0 option:selected").text(); // 4
 
-                   
-           })
+                  $.put('/api/products', {amount: amountToPurchase}, function() {
+
+                  })
                 //   $(".card1-text").text(`The price is: $${data[0].price}`);
                 //   $(".card2-text").text(`The price is: $${data[1].price}`);
                 //   $(".card3-text").text(`The price is: $${data[2].price}`);
                   }
             });
-
+            
             
            
 
