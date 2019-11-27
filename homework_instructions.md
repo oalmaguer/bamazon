@@ -61,7 +61,7 @@ You'll like have some modifications to this (maybe another script file or styles
 
 * Populate this database with around 10 different products. (i.e. Insert "mock" data rows into this database and table).
 
-4. Create your HTML and API routes. Your API routes should follow RESTful principles.
+4. Create your HTML and API routes. Your API routes sho uld follow RESTful principles.
 
 5. Create a front-end using HTML, CSS, and JavScript/jQuery to provide the customer with a listing of products available to purchase and the price. Customers should be able to select an item and specify a quantity, and then submit the order.
 
