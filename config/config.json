@@ -19,7 +19,7 @@
     "use_env_variable": "JAWSDB_URL",
     "username": "pnz3z4mqaqyp9uxs",
     "password": "o7iy3g035ovtkv6q" ,
-    "database": "database_production",
+    "database": "zhskdpe2bmonighs",
     "host": "kf3k4aywsrp0d2is.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql",
     "operatorsAliases": false
